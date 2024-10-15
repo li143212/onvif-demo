@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.netvine</groupId>
+    <artifactId>onvif_demo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>onvif-java-lib</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/onvif-2016-03-16.jar</systemPath>
+        </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.homio/onvif &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.homio</groupId>-->
+<!--            <artifactId>onvif</artifactId>-->
+<!--            <version>1.0.2</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.github.03</groupId>-->
+<!--            <artifactId>onvif</artifactId>-->
+<!--            <version>1.0.9</version>-->
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>com.burgstaller</groupId>-->
+<!--                    <artifactId>okhttp-digest</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.burgstaller</groupId>-->
+<!--            <artifactId>okhttp-digest</artifactId>-->
+<!--            <scope>system</scope>-->
+<!--            <version>2.1</version>-->
+<!--            <systemPath>${project.basedir}/lib/okhttp-digest-2.1.jar</systemPath>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.burgstaller</groupId>-->
+<!--            <artifactId>okhttp-digest</artifactId>-->
+<!--            <version>2.1</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>be.teletask.onvif</groupId>-->
+<!--            <artifactId>onvif</artifactId>-->
+<!--            <version>1.0.2</version>-->
+<!--        </dependency>-->
+        
+        <!-- 添加 javax.xml.soap-api 依赖 -->
+        <dependency>
+            <groupId>javax.xml.soap</groupId>
+            <artifactId>javax.xml.soap-api</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+        
+        <!-- 添加 com.sun.xml.messaging.saaj 依赖 -->
+        <dependency>
+            <groupId>com.sun.xml.messaging.saaj</groupId>
+            <artifactId>saaj-impl</artifactId>
+            <version>1.5.2</version>
+        </dependency>
+    </dependencies>
+
+</project>
