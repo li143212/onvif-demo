@@ -1,0 +1,2 @@
+# onvif-demo
+onvif控制nvr的demo，实现了通过nvr控制通道1下IPC的云台和获取RTSP地址
